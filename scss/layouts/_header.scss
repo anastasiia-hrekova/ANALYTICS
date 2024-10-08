@@ -1,0 +1,56 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+
+    &__logo {
+        width: 184px;
+        height: 40px;
+    }
+
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 36px;
+        color: var(--secondary-color);
+        @include text(16px, 400, 1.17);
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 3px;
+
+        &-btn {
+            width: 161px;
+            height: 40px;
+            border-radius: 68px;
+            background-color: transparent;
+            border: none;
+            color: var(--secondary-color);
+            @include text(16px, 400, 1.17);
+
+            &:hover {
+                width: 161px;
+                height: 40px;
+                border-radius: 68px;
+                border: 1px solid var(--secondary-color);
+            }
+        }
+    }
+}
