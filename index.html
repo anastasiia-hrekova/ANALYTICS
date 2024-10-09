@@ -16,8 +16,8 @@
 <body>
     <header class="header">
         <nav class="container header__container">
-            <img class="header__logo" src="./images/logo.svg" alt="logo">
-
+            <a href="#"><img class="header__logo" src="./images/logo.svg" alt="logo">
+            </a>
             <ul class="header__menu">
                 <li class="header__menu-item"><a href="#">Products</a></li>
                 <li class="header__menu-item"><a href="#">Pricing</a></li>
@@ -27,7 +27,7 @@
 
             <div class="header__buttons">
                 <button class="header__buttons-btn" type="button">Sign in</button>
-                <button class="header__buttons-btn" type="button">Sign Up</button>
+                <button class="header__buttons-btn header__signup" type="button">Sign Up</button>
             </div>
 
             <!-- Hamburger Button -->
@@ -35,8 +35,7 @@
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
                 <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </button>
+                </button>
 
             <div class="mobile-menu">
                 <ul>
@@ -53,6 +52,8 @@
     <main>
         <div class=" hero-section">
             <div class="container hero-section__block">
+            <img class="hero-section__mobile" src="./images/main-screen-mobile.png" alt="analystics">
+
                 <h1 class="hero-section__title">Monitor your business on real-time dashboard</h1>
                 <p class="hero-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
                     aliquet volutpat pellentesque
@@ -145,51 +146,61 @@
 
     <footer class="footer">
 
-        <div class="container footer-section">
+        <div class="container footer__block">
 
-            <h2 class="footer-section__title">Pricing Plans</h2>
-            <p class="footer-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
+            <div class="footer__block-text">
+                <h2 class="footer__title">Pricing Plans</h2>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
                 aliquet
                 volutpat pellentesque volutpat est. </p>
+            </div>
 
-            <ul class="footer-section__pricing">
-                <li class="footer-section__pricing-item">
-                    <h3 class="footer-section__pricing-title">Starter</h3>
-                    <p class="footer-section__pricing-text">up to 3 users</p>
-                    <h1 class="footer-section__pricing-price">$29</h1>
-                    <p class="footer-section__pricing-text">per month</p>
-                    <button class="footer-section__pricing-btn" type="button">Order</button>
+            <ul class="footer__pricing">
+                <li class="footer__item">
+                    <h3 class="footer__item-title">Starter</h3>
+                    <p class="footer__item-text">up to 3 users</p>
+                    <img class="footer__item-img" src="./images/line1.png" alt="line">
+                    <img class="footer__item-img2" src="./images/line2.png" alt="line">
+                    <h1 class="footer__item-price">$ <span class="big-size">29</span></h1>
+                    <p class="footer__item-text">per month</p>
+                    <button class="footer__item-btn" type="button">Order</button>
                 </li>
-                <li class="footer-section__pricing-item">
-                    <h3 class="footer-section__pricing-title">Standard</h3>
-                    <p class="footer-section__pricing-text">up to 20 users</p>
-                    <h1 class="footer-section__pricing-price">$99</h1>
-                    <p class="footer-section__pricing-text">per month</p>
-                    <button class="footer-section__pricing-btn" type="button">Order</button>
+                <li class="footer__item">
+                    <h3 class="footer__item-title">Standard</h3>
+                    <p class="footer__item-text">up to 20 users</p>
+                    <img class="footer__item-img" src="./images/line1.png" alt="line">
+                    <img class="footer__item-img2" src="./images/line2.png" alt="line">
+                    <h1 class="footer__item-price">$ <span class="big-size">99</span></h1>
+                    <p class="footer__item-text">per month</p>
+                    <button class="footer__item-btn" type="button">Order</button>
                 </li>
-                <li class="footer-section__pricing-item">
-                    <h3 class="footer-section__pricing-title">Premium</h3>
-                    <p class="footer-section__pricing-text">up to 200 users</p>
-                    <h1 class="footer-section__pricing-price">$299</h1>
-                    <p class="footer-section__pricing-text">per month</p>
-                    <button class="footer-section__pricing-btn" type="button">Order</button>
+                <li class="footer__item">
+                    <h3 class="footer__item-title">Premium</h3>
+                    <p class="footer__item-text">up to 200 users</p>
+                    <img class="footer__item-img" src="./images/line1.png" alt="line">
+                    <img class="footer__item-img2" src="./images/line2.png" alt="line">
+                    <h1 class="footer__item-price">$ <span class="big-size">299</span></h1>
+                    <p class="footer__item-text">per month</p>
+                    <button class="footer__item-btn" type="button">Order</button>
                 </li>
             </ul>
 
-            <div class="footer-section__nav">
-                <img class="footer-section__nav-logo" src="./images/logo-bottom.svg" alt="logo">
+           <img class="footer__line" src="./images/footer-line.png" alt="line">
 
-                <ul class="footer-section__nav-list">
-                    <li class="footer-section__nav-item"><a href="#">Products</a></li>
-                    <li class="footer-section__nav-item"><a href="#">Pricing</a></li>
-                    <li class="footer-section__nav-item"><a href="#">FAQ</a></li>
-                    <li class="footer-section__nav-item"><a href="#">Blog</a></li>
+            <div class="footer__nav">
+                <a href="#"><img class="footer__nav-logo" src="./images/logo-bottom.svg" alt="logo"></a>
+
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="#">Products</a></li>
+                    <li class="footer__nav-item"><a href="#">Pricing</a></li>
+                    <li class="footer__nav-item"><a href="#">FAQ</a></li>
+                    <li class="footer__nav-item"><a href="#">Blog</a></li>
                 </ul>
 
-                <div class="footer-section__social">
-                    <a class="footer-section__social-link" href="#"><img src="./images/facebook.svg" alt="facebook"></a>
-                    <a class="footer-section__social-link" href="#"><img src="./images/twitter.svg" alt="twitter"></a>
-                    <a class="footer-section__social-link" href="#"><img src="./images/instagram.svg"
+                <div class="footer__social">
+                    <a class="footer__social-link" href="#"><img src="./images/facebook.svg" alt="facebook"></a>
+                    <a class="footer__social-link" href="#"><img src="./images/twitter.svg" alt="twitter"></a>
+                    <a class="footer__social-link" href="#"><img src="./images/instagram.svg"
                             alt="instagram"></a>
                 </div>
 

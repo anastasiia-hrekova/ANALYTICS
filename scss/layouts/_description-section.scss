@@ -1,0 +1,38 @@
+.description-section {
+    @include center;
+    flex-direction: column;
+    gap: 120px;
+    padding-bottom: 114px;
+
+    &__block {
+        @include center;
+        flex-direction: row;
+        gap: 100px;
+       
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 40%;
+        }
+
+        &-img{
+            width: 50%;
+            box-shadow: 0px 18px 50px -15px #192A5933;
+
+        }
+
+    }
+
+    &__title {
+        @include text(40px, 700, 1.17);
+        color: var(--primary-color);
+    }
+
+    &__text {
+        @include text(18px, 400, 1.5);
+        color: var(--secondary-color);
+    }
+
+}
