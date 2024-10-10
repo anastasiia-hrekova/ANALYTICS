@@ -36,6 +36,7 @@
         align-items: center;
         justify-content:baseline;
         flex-direction: column;
+        text-align: center;
         gap: 15px;
         width: calc(33.3% - 20px);
         height: 164px;
@@ -56,4 +57,60 @@
             text-align: center;
         }
     }
+}
+
+@media screen and (max-width: 880px) {
+    .features-section {
+        gap: 40px;
+
+        &__block{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+            text-align: left;
+
+            &-title{
+                @include text(30px, 700, 1.17);       
+            }
+
+            &-text{
+                @include text(14px, 400, 1.5);
+                
+            }
+
+        }
+
+        &__list{
+            flex-direction: column;
+            margin-bottom: 71px; 
+            
+        }
+
+        &__item{
+            @include center;
+            flex-direction: row;
+            width: 100%;
+            height: 88px;
+            gap: 28px;
+
+            &-block{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                
+            }
+
+            &-img{
+                align-self: flex-start;
+            }
+
+            &-text{
+                width: 80%;
+                @include text(14px, 400, 1.5);
+                text-align: left;
+            }
+        }
+        }
 }
