@@ -1,7 +1,48 @@
-.mobile-menu{
-    display: none;
-}
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  color: var(--secondary-color);
+  @include text(16px, 400, 1.17);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  z-index: 2;
 
-.hamburger-button{
-    display: none;
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn-close {
+    background: none;
+    border-style: none;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  &__list {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    @include text(16px, 400, 16px);
+    color: var(--color-brand-dark);
+
+    &:hover {
+      color: var(--color-brand);
+      transition: 0.3s;
+    }
+  }
 }
