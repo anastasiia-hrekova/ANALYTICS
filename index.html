@@ -14,6 +14,12 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="./js/mobile-menu.js" defer></script>
+
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -118,11 +124,13 @@
               src="./images/monitoring.png"
               alt="monitoring"
             />
-            <h3 class="features-section__item-title">Monitoring 24/7</h3>
-            <p class="features-section__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipis cing elit.
-              Elementum nisi aliquet volutpat.
-            </p>
+            <div class="features-section__item-block">
+              <h3 class="features-section__item-title">Monitoring 24/7</h3>
+              <p class="features-section__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipis cing elit.
+                Elementum nisi aliquet volutpat.
+              </p>
+            </div>
           </li>
           <li class="features-section__item">
             <img
@@ -130,11 +138,13 @@
               src="./images/widget.png"
               alt="widget"
             />
-            <h3 class="features-section__item-title">Widget System</h3>
-            <p class="features-section__item-text">
-              Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae
-              et, tortor pulvinar risus pulvinar.
-            </p>
+            <div class="features-section__item-block">
+              <h3 class="features-section__item-title">Widget System</h3>
+              <p class="features-section__item-text">
+                Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+                Vitae et, tortor pulvinar risus pulvinar.
+              </p>
+            </div>
           </li>
           <li class="features-section__item">
             <img
@@ -142,11 +152,13 @@
               src="./images/perfomance.png"
               alt="perfomance"
             />
-            <h3 class="features-section__item-title">Best Performance</h3>
-            <p class="features-section__item-text">
-              Lorem ipsum dolor sit amet, consectetur adipis cing elit.
-              Elementum nisi aliquet volutpat.
-            </p>
+            <div class="features-section__item-block">
+              <h3 class="features-section__item-title">Best Performance</h3>
+              <p class="features-section__item-text">
+                Lorem ipsum dolor sit amet, consectetur adipis cing elit.
+                Elementum nisi aliquet volutpat.
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -174,7 +186,7 @@
 
         <div class="description-section__block">
           <img
-            class="description-section__block-img"
+            class="description-section__block-img description-section__block-img2"
             src="./images/section4.png"
             alt="reports"
           />
@@ -224,53 +236,67 @@
           </p>
         </div>
 
-        <ul class="footer__pricing">
-          <li class="footer__item">
-            <h3 class="footer__item-title">Starter</h3>
-            <p class="footer__item-text">up to 3 users</p>
-            <img class="footer__item-img" src="./images/line1.png" alt="line" />
-            <img
-              class="footer__item-img2"
-              src="./images/line2.png"
-              alt="line"
-            />
-            <h1 class="footer__item-price">
-              $ <span class="big-size">29</span>
-            </h1>
-            <p class="footer__item-text">per month</p>
-            <button class="footer__item-btn" type="button">Order</button>
-          </li>
-          <li class="footer__item">
-            <h3 class="footer__item-title">Standard</h3>
-            <p class="footer__item-text">up to 20 users</p>
-            <img class="footer__item-img" src="./images/line1.png" alt="line" />
-            <img
-              class="footer__item-img2"
-              src="./images/line2.png"
-              alt="line"
-            />
-            <h1 class="footer__item-price">
-              $ <span class="big-size">99</span>
-            </h1>
-            <p class="footer__item-text">per month</p>
-            <button class="footer__item-btn" type="button">Order</button>
-          </li>
-          <li class="footer__item">
-            <h3 class="footer__item-title">Premium</h3>
-            <p class="footer__item-text">up to 200 users</p>
-            <img class="footer__item-img" src="./images/line1.png" alt="line" />
-            <img
-              class="footer__item-img2"
-              src="./images/line2.png"
-              alt="line"
-            />
-            <h1 class="footer__item-price">
-              $ <span class="big-size">299</span>
-            </h1>
-            <p class="footer__item-text">per month</p>
-            <button class="footer__item-btn" type="button">Order</button>
-          </li>
-        </ul>
+        <div class="swiper mySwiper">
+          <ul class="footer__pricing swiper-wrapper">
+            <li class="footer__item swiper-slide">
+              <h3 class="footer__item-title">Starter</h3>
+              <p class="footer__item-text">up to 3 users</p>
+              <img
+                class="footer__item-img"
+                src="./images/line1.png"
+                alt="line"
+              />
+              <img
+                class="footer__item-img2"
+                src="./images/line2.png"
+                alt="line"
+              />
+              <h1 class="footer__item-price">
+                $ <span class="big-size">29</span>
+              </h1>
+              <p class="footer__item-text">per month</p>
+              <button class="footer__item-btn" type="button">Order</button>
+            </li>
+            <li class="footer__item swiper-slide">
+              <h3 class="footer__item-title">Standard</h3>
+              <p class="footer__item-text">up to 20 users</p>
+              <img
+                class="footer__item-img"
+                src="./images/line1.png"
+                alt="line"
+              />
+              <img
+                class="footer__item-img2"
+                src="./images/line2.png"
+                alt="line"
+              />
+              <h1 class="footer__item-price">
+                $ <span class="big-size">99</span>
+              </h1>
+              <p class="footer__item-text">per month</p>
+              <button class="footer__item-btn" type="button">Order</button>
+            </li>
+            <li class="footer__item swiper-slide">
+              <h3 class="footer__item-title">Premium</h3>
+              <p class="footer__item-text">up to 200 users</p>
+              <img
+                class="footer__item-img"
+                src="./images/line1.png"
+                alt="line"
+              />
+              <img
+                class="footer__item-img2"
+                src="./images/line2.png"
+                alt="line"
+              />
+              <h1 class="footer__item-price">
+                $ <span class="big-size">299</span>
+              </h1>
+              <p class="footer__item-text">per month</p>
+              <button class="footer__item-btn" type="button">Order</button>
+            </li>
+          </ul>
+        </div>
 
         <img class="footer__line" src="./images/footer-line.png" alt="line" />
 
@@ -303,5 +329,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

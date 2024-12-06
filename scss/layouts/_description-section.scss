@@ -36,3 +36,28 @@
     }
 
 }
+
+@media screen and (max-width: 880px) {
+    .description-section {
+        gap: 60px;
+        padding-bottom: 0;
+
+        &__block {            
+            @include center;
+            flex-direction: column;
+            gap: 30px;
+
+            &-text{
+                width: 100%;
+            }
+
+            &-img{
+                width: 100%;
+            }
+
+            &-img{
+                order: 1;
+            }
+        }
+    }
+}
