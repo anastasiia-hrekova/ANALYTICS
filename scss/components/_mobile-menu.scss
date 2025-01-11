@@ -8,7 +8,7 @@
   color: var(--secondary-color);
   @include text(16px, 400, 1.17);
   transform: translateX(100%);
-  transition: transform 0.3s;
+  transition: transform 0.5s;
   z-index: 2;
 
   &.is-open {

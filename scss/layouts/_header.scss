@@ -3,6 +3,7 @@
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  z-index: 2;
 
   &__container {
     display: flex;
@@ -53,6 +54,7 @@
         height: 40px;
         border-radius: 68px;
         border: 1px solid var(--secondary-color);
+        transition: 0.3s ease;
       }
     }
   }
